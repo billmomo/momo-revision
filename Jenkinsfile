@@ -1,17 +1,17 @@
 pipeline{
     agent any 
-    stages{
-        stage('first stage'){
-            steps{
-                sh 'echo hello'
-            }
+    stages {
+        stage{'first stage'}{
+        steps{
+            sh 'echo hello'
         }
-        stage('clean'){
+        }
+        stage{'clean artifact'}{
             steps{
                 sh 'echo hi'
             }
         }
         
     }
+
 }
-   
